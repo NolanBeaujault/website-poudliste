@@ -1,0 +1,252 @@
+/*CSS du body de index*/
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5%;
+  max-width: 1920px;
+  padding-inline: 50px;
+}
+
+.hero-overview {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 50px;
+}
+
+.hero-overview-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-overview__image {
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  height: 350px;
+  width: 650px;
+}
+
+.hero-overview__title {
+  font-family: "Harry Potter", sans-serif;
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+h1.hero-overview__title {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.hero-overview__business {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-business__description {
+  font-family: var(--open-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.hero-business__button {
+  padding: 15px 20px;
+  max-width: 200px;
+
+  border-radius: 50px;
+
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 18px;
+  font-family: var(--open-sans);
+  line-height: 23px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.hero-business__button img {
+  margin-left: 20px;
+  object-fit: contain;
+}
+
+.hero-business__button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+  border: 1px solid var(--secondary-color);
+}
+
+.hero-customers__image {
+  height: 80px;
+  object-fit: contain;
+}
+
+.hero-customers__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-customers__number {
+  font-size: 30px;
+  color: var(--secondary-color);
+  font-family: var(--open-sans);
+}
+
+.hero-customers__description {
+  font-size: 14px;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-family: "Harry Potter", sans-serif;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.hero-content__guide {
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 30px;
+  border-radius: 36px;
+
+  background: linear-gradient(to bottom, #f27405, #f2a341, #a62317);
+}
+
+.hero-guide__secure {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+  padding: 10px 30px;
+  border-radius: 36px;
+  background-color: var(--secondary-color);
+}
+
+.hero-guide__secure-desc {
+  font-family: var(--roboto);
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.hero-guide__secure-desc span {
+  color: #f27405;
+}
+
+.hero-guide__title {
+  font-family: var(--open-sans);
+  color: var(--secondary-color);
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.hero-guide__desc {
+  font-family: var(--open-sans);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-guide__steps {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.hero-guide__steps li {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--secondary-color);
+  font-family: var(--roboto);
+}
+
+.hero-guide__step-number {
+  align-items: center;
+  margin: 3px;
+  padding: 5px 10px;
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+}
+
+.hero-guide__step-desc {
+  font-weight: 600;
+  font-family: var(--open-sans);
+  font-size: 18px;
+}
+
+.hero-guide__step-comment {
+  font-size: 13px;
+  font-family: var(--roboto);
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  h1.hero-overview__title {
+    font-size: 3rem;
+  }
+
+  h2.hero-overview__title {
+    font-size: 1.5rem;
+  }
+
+  .hero-overview__business {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    padding-inline: 35px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero {
+    padding-inline: 20px;
+  }
+}

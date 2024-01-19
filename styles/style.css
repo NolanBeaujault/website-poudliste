@@ -1,0 +1,415 @@
+/*CSS de membres.html*/
+.membres-row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.membre {
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f27405;
+}
+
+.membre img {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px 10px 0 0;
+}
+
+.description {
+  padding: 10px;
+  color: #0c0b0d;
+  font-size: 20px;
+  font-weight: bold; /* Texte en gras */
+  font-family: var(--roboto);
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.bureau__title,
+.com__title,
+.fip__title {
+  font-family: "Harry Potter", sans-serif;
+  color: var(--secondary-color);
+  font-size: 27px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/*Fouaille Mise en forme*/
+.fouaille__title,
+.extspons__title {
+  font-family: "Harry Potter", sans-serif;
+  color: var(--secondary-color);
+  font-size: 27px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.fouaille__pictures,
+.extspons__pictures {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.fouaille__membre,
+.extspons__membre {
+  width: calc(
+    25% - 20px
+  ); /* Utilisez calc() pour gérer les marges entre les éléments */
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #f27405;
+}
+
+.fouaille__membre img,
+.extspons__membre img {
+  width: 350px;
+  height: 500px;
+  border-radius: 10px 10px 0 0;
+}
+
+/*Effet numéro de téléphone*/
+
+.membre,
+.fouaille__membre,
+.extspons__membre {
+  position: relative;
+  overflow: hidden;
+}
+
+.membre::after,
+.fouaille__membre::after,
+.extspons__membre::after {
+  content: attr(data-phone);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.membre:hover::after,
+.fouaille__membre:hover::after,
+.extspons__membre:hover::after {
+  opacity: 1;
+}
+
+.membre img,
+.fouaille__membre img,
+.extspons__membre img {
+  transition: filter 0.3s ease;
+}
+
+.membre:hover img,
+.fouaille__membre:hover img,
+.extspons__membre:hover img {
+  filter: brightness(0.7);
+}
+
+/*CSS de allos.html*/
+.allos__style {
+  text-align: center;
+  font-size: 18px;
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-family: var(--roboto);
+}
+
+.tout{
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 110px;
+  -webkit-user-drag: none;
+}
+
+.carre{
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.carre-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 20px;
+  width: 280px;
+  height: 280px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px;
+  background: rgba(255, 255, 255, 0.7); /* Couleur de fond avec opacité */
+  cursor: default;
+  user-select: none;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.carre-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.carre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8; /* Réglez l'opacité selon vos préférences */
+  z-index: -1; /* Assurez-vous que l'image de fond est derrière le contenu */
+}
+
+.carre.Balai::before {
+  background-image: url('../fondallo/balai.jpg');
+}
+
+.carre.Chauve::before {
+  background-image: url('../fondallo/voldemort.jpg');
+}
+
+.carre.Gare::before {
+  background-image: url('../fondallo/gare.jpg');
+}
+.carre.Howhart::before {
+  background-image: url('../fondallo/tram.jpg');
+}
+.carre.Poussiere::before {
+  background-image: url('../fondallo/poussiere.jpg');
+}
+.carre.Pesto::before {
+  background-image: url('../fondallo/pesto.jpg');
+}
+.carre.Callogero::before {
+  background-image: url('../fondallo/callogerp.jpeg');
+}
+.carre.Danse::before {
+  background-image: url('../fondallo/danse.jpg');
+}
+.carre.Magie::before {
+  background-image: url('../fondallo/magie.jpg');
+}
+.carre.Freestyle::before {
+  background-image: url('../fondallo/freestyle.jpg');
+}
+.carre.Or::before {
+  background-image: url('../fondallo/or.jpg');
+}
+.carre.Eau::before {
+  background-image: url('../fondallo/the.jpg');
+}
+.carre.Cine::before {
+  background-image: url('../fondallo/cinema.jpg');
+}
+.carre.Oreiller::before {
+  background-image: url('../fondallo/berceuse.jpg');
+}
+.carre.Porte::before {
+  background-image: url('../fondallo/porte.jpg');
+}
+
+.tout h1{
+  font-family: 'Harry Potter', sans-serif;
+  font-size: 17px;
+}
+
+
+/*CSS de planning.html*/
+.tableau__planning body {
+  font-family: var(--roboto);
+  background-color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px;
+}
+.tableau__planning table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.planning__title {
+  font-family: "Harry Potter", sans-serif;
+  color: var(--secondary-color);
+  font-size: 27px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.tableau__planning th,
+.tableau__planning td {
+  border: 1px solid var(--secondary-color);
+  padding: 8px;
+  text-align: center;
+}
+.tableau__planning th {
+  background-color: var(--secondary-color);
+}
+.catégorie {
+  color: var(--secondary-color);
+  font-family: var(--roboto);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tableau__planning td:hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.tableau__planning td:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.tableau__planning td:hover::before { 
+  font-size: 48px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal img{
+  margin-top: 15rem;
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  margin-top: 10%;
+  display: block;
+  max-width: 60%;
+  max-height: 60%
+  
+}
+
+.close-button {
+  position: relative;
+  top: 20%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #ccc;
+}
+
+
+@media screen and (max-width: 500px) {
+  .tableau__planning th,
+  .tableau__planning td {
+    font-size: 14px; /* ajustez la taille de police selon vos préférences */
+    padding: 6px; /* ajustez la marge intérieure selon vos préférences */
+  }
+
+  .planning__title {
+    font-size: 20px; /* ajustez la taille de police selon vos préférences */
+  }
+
+  .catégorie {
+    font-size: 16px; /* ajustez la taille de police selon vos préférences */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tableau__planning th,
+  .tableau__planning td {
+    font-size: 12px; /* ajustez la taille de police selon vos préférences */
+    padding: 6px; /* ajustez la marge intérieure selon vos préférences */
+  }
+
+  .planning__title {
+    font-size: 18px; /* ajustez la taille de police selon vos préférences */
+  }
+
+  .catégorie {
+    font-size: 14px; /* ajustez la taille de police selon vos préférences */
+  }
+}
+
+.hero-business__description {
+  display: inline-block;
+  margin-left: 45px;
+  margin-bottom: 55px;
+}
+
+.hero-business__button {
+  display: inline-block;
+  margin-left: -15px;
+}
+
+.planning-button {
+  margin-right: 15px;
+}
+
+.three-button {
+  margin-left: 25px;
+}
+
+

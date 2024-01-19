@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/icon.jpg">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+
+    <title>Membres</title>
+</head>
+<body>
+    <header>
+      <nav class="header__nav">
+          <div data-aos="fade-right" class="header__logo">
+              <a href="index.html" class="nav-link">
+                  <img class="logo-img" src="public/icon.jpg" alt="Logo Poudliste">
+                  Poudliste
+              </a>
+          </div>
+          <div class="header__menu">
+              <a class="nav-link" href="membres.html"><button class="header__button three-button">Membres</button></a>
+              <a class="nav-link" href="allos.html"><button class="header__button three-button">Allos</button></a>
+              <a class="nav-link" target="_blank" href="https://youtube.com/@LaBabac?si=o_5bXsHg6U7AIveE">
+                  <button class="header__button three-button">Vidéos</button>
+              </a>
+          </div>
+          <div class="header__auth">
+              <a href="https://www.instagram.com/poudliste_tps?igsh=MTBoczIyZWo2ajF1cA==" class="nav-link" target="_blank">
+                  <button class="header__button instagram-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    </svg>
+                  </button>
+              </a>
+              <a class="nav-link" href="planning.html"><button class="header__button planning-button">Planning</button></a>
+          </div>
+          <div class="header__menu-mobile" id="mobile-menu-button">
+              <img src="Assets/menu.svg" alt="menu">
+          </div>
+  
+          <div class="mobile-menu" id="mobile-menu">
+              <a class="nav-link" href="membres.html"><button class="header__button three-button">Membres</button></a>
+              <a class="nav-link" href="allos.html"><button class="header__button three-button">Allos</button></a>
+              <a class="nav-link" target="_blank" href="https://youtube.com/@LaBabac?si=o_5bXsHg6U7AIveE">
+                  <button class="header__button three-button">Vidéos</button>
+              </a>
+              <a href="https://www.instagram.com/poudliste_tps?igsh=MTBoczIyZWo2ajF1cA==" class="nav-link" target="_blank">
+                  <button class="header__button instagram-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" ><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    </svg>
+                  </button>
+              </a>
+              <a class="nav-link" href="planning.html"><button class="header__button planning-button">Planning</button></a>
+          </div>
+      </nav>
+  </header>
+  <script>
+      document.getElementById('mobile-menu-button').addEventListener('click', function () {
+          var mobileMenu = document.getElementById('mobile-menu');
+          mobileMenu.style.display = (mobileMenu.style.display === 'block') ? 'none' : 'block';
+      });
+  </script>
+  
+    <!--Boutons Page-->
+    <section id="membres">
+        <p><br><br></p>
+        <h3 class="bureau__title">Le Bureau 📓<br><br></h3>
+        <div class="membres-row">
+            <div class="membre" data-phone="07 81 73 38 75">
+                <img src="pictures/fabio.png" alt="Membre 1">
+                <p class="description">FABIO : Prez</p>
+            </div>
+            <div class="membre" data-phone="06 40 90 95 16">
+                <img src="pictures/juliette.png" alt="Membre 2">
+                <p class="description">JULIETTE : Secrétaire</p>
+            </div>
+            <div class="membre" data-phone="07 67 84 87 70">
+                <img src="pictures/yelman.png" alt="Membre 3">
+                <p class="description">YEYE : Tréso</p>
+            </div>
+        </div>
+        <p>                
+            <h3 class="fouaille__title">Les Fouailles 🍲<br><br></h3> 
+        </p>
+        <div class="fouaille-row">
+            <div class="fouaille__pictures">
+                <div class="fouaille__membre" data-phone="07 87 58 40 36">
+                    <img src="pictures/pauline.jpg" alt="Membre 4">
+                    <p class="description">PAULINE : Fouaille</p>
+                </div>
+                <div class="fouaille__membre" data-phone="07 83 74 88 93">
+                    <img src="pictures/lucie.jpg" alt="Membre 5">
+                    <p class="description">LUCIE : Fouaille</p>
+                </div>
+                <div class="fouaille__membre" data-phone="07 81 84 74 96">
+                    <img src="pictures/albe.jpg" alt="Membre 6">
+                    <p class="description">ALBE : Fouaille</p>
+                </div>
+                <div class="fouaille__membre" data-phone="06 75 98 31 92">
+                    <img src="pictures/jules.jpg" alt="Membre 7">
+                    <p class="description">JULES : Fouaille</p>
+                </div>
+            </div>
+        </div>
+        <p>
+            <h3 class="extspons__title">Spons & Ext 🎁🪩<br><br></h3>
+        </p>
+        <div class="extspons-row">
+            <div class="extspons__pictures">
+                <div class="extspons__membre" data-phone="07 83 76 54 38">
+                    <img src="pictures/apo.jpg" alt="Membre 8">
+                    <p class="description">APO : Spons</p>
+                </div>
+                <div class="extspons__membre" data-phone="07 61 86 24 56">
+                    <img src="pictures/alexandreBis2.jpg" alt="Membre 9">
+                    <p class="description">ALEX : Spons</p>
+                </div>
+                <div class="extspons__membre" data-phone="06 52 29 47 57">
+                    <img src="pictures/eric.jpg" alt="Membre 10">
+                    <p class="description">ERIC : Ext</p>
+                </div>
+                <div class="extspons__membre" data-phone="07 83 46 16 34">
+                    <img src="pictures/clara.jpg" alt="Membre 11">
+                    <p class="description">CLARA : Ext</p>
+                </div>
+            </div>
+        </div>
+        <p>
+            <h3 class="com__title">Pôle Com 🌐📱📹<br><br></h3>
+        </p>
+        <div class="membres-row">
+            <div class="membre" data-phone="07 81 12 64 66">
+                <img src="pictures/nolan.jpg" alt="Membre 12">
+                <p class="description">NOLAN : Tech</p>
+            </div>
+            <div class="membre" data-phone="07 82 95 36 43">
+                <img src="pictures/nais.jpg" alt="Membre 13">
+                <p class="description">NAÏS : Réseaux</p>
+            </div>
+            <div class="membre" data-phone="06 31 27 55 62">
+                <img src="pictures/claire.jpg" alt="Membre 14">
+                <p class="description">CLAIRE : Int</p>
+            </div>
+        </div>
+        <p>
+            <h3 class="fip__title">Notre cher FIP 👷🏼‍♂️<br><br></h3>
+        </p>
+        <div class="membres-row">
+            <div class="membre" data-phone="07 70 30 39 94">
+                <img src="pictures/gregory (1).jpg" alt="Membre15">
+                <p class="description">GREGORY : Fip</p>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <p class="credits">© Nolan Beaujault  (merci Bourdinho pour l'aide) <br></p>
+  </footer>
+</html>

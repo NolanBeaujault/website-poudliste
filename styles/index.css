@@ -1,0 +1,41 @@
+/*Pack de base*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("./navbar.css");
+
+:root {
+  --roboto: "Roboto", sans-serif;
+  --open-sans: "Open Sans", sans-serif;
+
+  --primary-color: #141215;
+  --secondary-color: #fff;
+
+  --gray-15: #262626;
+  --gray-36: #5c5c5c;
+  --gray-100: #888888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+  margin-top: 150px;
+}
+
+footer {
+  background-color: #f27405;
+  padding: 10px;
+  text-align: center;
+}
+
+.credits {
+  color: white; /* Couleur du texte en blanc pour un meilleur contraste */
+  font-size: 14px;
+  margin: 0;
+}

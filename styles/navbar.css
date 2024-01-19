@@ -1,0 +1,238 @@
+/*1.0  HEADER BASE/ 
+    /*Style de base de la barre de navigation /*/
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: 1000;
+}
+
+/* Ajout de styles pour rendre la barre de navigation transparente en certaines conditions */
+
+/* Style du logo dans la barre de navigation */
+.header__logo {
+  padding: 10px 20px;
+  background: linear-gradient(
+    to left,
+    #f2e8c9,
+    #f27405,
+    #f2a341,
+    #a62317,
+    #0c0b0d
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: "Harry Potter", sans-serif;
+  cursor: default;
+}
+
+/* Style des boutons dans la barre de navigation */
+.header__button {
+  padding: 9px 20px;
+  margin: 0 2px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: var(--gray-15);
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--open-sans);
+  line-height: 23px;
+  cursor: pointer;
+}
+
+/* Utilisation des unités relatives pour la taille des boutons en version mobile */
+@media (max-width: 600px) {
+  .header__button {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*1.1 HEADER HOVER*/
+
+.header__button:hover,
+.header__auth.header__auth:nth-child(2) {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition: ease-in 0.3s;
+
+}
+
+.header__auth.header__auth:nth-child(2):hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: ease-in 0.2s;
+
+  border: 1px solid var(--secondary-color);
+}
+
+.header__menu-mobile {
+  display: none;
+}
+
+.logo-img {
+  max-width: 100px;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* 1.2 HEADER SOUS MENU */
+/* Petit menu déroulant quand la page devient petite */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px; /* ajustez selon votre besoin */
+  right: 0; /* Modification de la position pour qu'il apparaisse sur la droite */
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: 1; /* Ajout de la propriété z-index pour contrôler la profondeur */
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--open-sans);
+  line-height: 23px;
+}
+
+.mobile-menu a:hover {
+  background-color: var(--gray-15);
+}
+
+/* Styles pour les écrans de petite taille (max-width: 900px) */
+@media screen and (max-width: 900px) {
+  .header__menu {
+    display: none;
+  }
+
+  .header__auth {
+    display: none;
+  }
+
+  .header__menu-mobile {
+    display: block;
+    cursor: pointer;
+    order: -1; /* Modification de l'ordre pour placer l'icône à côté du logo */
+    margin-right: 10px; /* Ajout d'une marge pour l'espacement */
+  }
+
+  .header__nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__logo {
+    padding: 10px;
+  }
+
+  .logo-img {
+    max-width: 80px;
+  }
+
+  .header__button {
+    width: 120px;
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .mobile-menu {
+    top: 100%; /* Positionne le sous-menu en dessous du header */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header__nav {
+    flex-direction: row; /* Change la direction pour aligner les éléments sur la même ligne */
+    justify-content: space-between; /* Répartit les éléments à l'extrémité de chaque côté */
+  }
+
+  .header__menu-mobile {
+    order: 1; /* Déplace l'icône du menu à droite */
+    margin-right: 10px; /* Ajoute une marge à droite pour l'espacement */
+  }
+
+  .mobile-menu .header__button {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .header__menu {
+    display: flex !important; /* Réaffiche le menu principal */
+  }
+
+  .header__auth {
+    display: flex !important; /* Réaffiche les éléments d'authentification */
+  }
+
+  .header__menu-mobile {
+    display: none; /* Cache l'icône du menu */
+  }
+
+  .header__nav {
+    flex-direction: row; /* Rétablit la direction pour aligner les éléments sur la même ligne */
+    justify-content: space-between; /* Répartit les éléments à l'extrémité de chaque côté */
+  }
+
+  .header__logo {
+    padding: 10px;
+  }
+
+  .logo-img {
+    max-width: 80px;
+  }
+
+  .header__button {
+    width: auto; /* Rétablit la largeur automatique des boutons */
+    font-size: 16px; /* Rétablit la taille de la police des boutons */
+    margin: 0 10px; /* Rétablit la marge des boutons */
+  }
+
+  /* Cache le menu déroulant pour les écrans plus larges */
+  .mobile-menu a {
+    display: none;
+  }
+}
+
+.instagram-button {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+.instagram-button svg {
+  fill: white;
+}
+
+.instagram-button:hover {
+  background-color: var(--secondary-color);
+  color: var(--gray-15);
+  border: 1px solid var(--gray-15);
+  transition: ease-in 0.3s;
+}
+
+.instagram-button:hover svg {
+  fill: var(--gray-15);
+}

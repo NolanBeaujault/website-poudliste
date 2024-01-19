@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="public/icon.jpg" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet" />
+
+    <title>Allos</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header__nav">
+        <div data-aos="fade-right" class="header__logo">
+          <a href="index.html" class="nav-link">
+            <img class="logo-img" src="public/icon.jpg" alt="Logo Poudliste" />
+            Poudliste
+          </a>
+        </div>
+        <div class="header__menu">
+          <a class="nav-link" href="membres.html"
+            ><button class="header__button three-button">Membres</button></a
+          >
+          <a class="nav-link" href="allos.html"
+            ><button class="header__button three-button">Allos</button></a
+          >
+          <a
+            class="nav-link"
+            target="_blank"
+            href="https://youtube.com/@LaBabac?si=o_5bXsHg6U7AIveE"
+          >
+            <button class="header__button three-button">Vidéos</button>
+          </a>
+        </div>
+        <div class="header__auth">
+          <a
+            href="https://www.instagram.com/poudliste_tps?igsh=MTBoczIyZWo2ajF1cA=="
+            class="nav-link"
+            target="_blank"
+          >
+            <button class="header__button instagram-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="14"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </button>
+          </a>
+          <a class="nav-link" href="planning.html"
+            ><button class="header__button planning-button">Planning</button></a
+          >
+        </div>
+        <div class="header__menu-mobile" id="mobile-menu-button">
+          <img src="Assets/menu.svg" alt="menu" />
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+          <a class="nav-link" href="membres.html"
+            ><button class="header__button three-button">Membres</button></a
+          >
+          <a class="nav-link" href="allos.html"
+            ><button class="header__button three-button">Allos</button></a
+          >
+          <a
+            class="nav-link"
+            target="_blank"
+            href="https://youtube.com/@LaBabac?si=o_5bXsHg6U7AIveE"
+          >
+            <button class="header__button three-button">Vidéos</button>
+          </a>
+          <a
+            href="https://www.instagram.com/poudliste_tps?igsh=MTBoczIyZWo2ajF1cA=="
+            class="nav-link"
+            target="_blank"
+          >
+            <button class="header__button instagram-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="14"
+                viewBox="0 0 448 512"
+              >
+                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                />
+              </svg>
+            </button>
+          </a>
+          <a class="nav-link" href="planning.html"
+            ><button class="header__button planning-button">Planning</button></a
+          >
+        </div>
+      </nav>
+    </header>
+    <script>
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          var mobileMenu = document.getElementById("mobile-menu");
+          mobileMenu.style.display =
+            mobileMenu.style.display === "block" ? "none" : "block";
+        });
+    </script>
+
+    <p><br /><br /></p>
+    <h3 class="bureau__title">Les ALLOS <br /><br /></h3>
+    <br><br>
+
+    <div class="tout" loading="lazy">
+      <div class="carre Balai">
+        <div class="carre-content">
+          <h1>ALLO NIMBUS</h1>
+        <div class="carre-desc">
+          <h3>On vient faire le ménage chez toi</h3>
+        </div>
+        </div>
+      </div>
+      <div class="carre Porte">
+        <div class="carre-content">
+          <h1>ALLO HOMORA</h1>
+        <div class="carre-desc">
+          <h3>On vient t'ouvrir une porte</h3>
+        </div>
+        </div>
+      </div>
+      <div class="carre Chauve">
+        <div class="carre-content">
+          <h1>ALLO VOLDEMORT</h1>
+        <div class="carre-desc">
+          <h3>On te fait la coupe de Voldemort = on te rase la
+            tête</h3>
+        </div>
+      </div>  
+    </div>
+    <div class="carre Gare">
+      <div class="carre-content">
+        <h1>ALL'HOGWARTS EXPRESS</h1>
+      <div class="carre-desc">
+        <h3>On vient te chercher à la la gare / On t'amène
+          à la gare</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Howhart">
+      <div class="carre-content">
+        <h1>ALL'HOHWART</h1>
+      <div class="carre-desc">
+        <h3>On vient te chercher / On t'amène à l'arrêt de tram</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Poussiere">
+      <div class="carre-content">
+        <h1>ALLO POUSSIERE</h1>
+      <div class="carre-desc">
+        <h3>On vient faire une poussière</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Pesto">
+      <div class="carre-content">
+        <h1>ALLO PESTO</h1>
+      <div class="carre-desc">
+        <h3>On vient te faire des pâtes au pesto</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Callogero">
+      <div class="carre-content">
+        <h1>C'ALLOGERO</h1>
+      <div class="carre-desc">
+        <h3>On vient te chanter du Callogero</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Danse">
+      <div class="carre-content">
+        <h1>ALLO'RS ON DANSE</h1>
+      <div class="carre-desc">
+        <h3>On vient danser chez toi</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Magie">
+      <div class="carre-content">
+        <h1>WINGARDIUM LEVI'ALLOSA</h1>
+      <div class="carre-desc">
+        <h3>On te fait un tour de magie</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Freestyle">
+      <div class="carre-content">
+        <h1>ALLO FREESTYLE</h1>
+      <div class="carre-desc">
+        <h3>On vient te faire un freestyle</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Or">
+      <div class="carre-content">
+        <h1>ALLO VIF D'OR</h1>
+      <div class="carre-desc">
+        <h3>On vient retrouver un objet chez toi</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Eau">
+      <div class="carre-content">
+        <h1>ALL'EAU BOUILLANTE</h1>
+      <div class="carre-desc">
+        <h3>On te fait un thé et on le boit avec toi</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Cine">
+      <div class="carre-content">
+        <h1>ALLO CINÉ</h1>
+      <div class="carre-desc">
+        <h3>On regarde un film avec vous</h3>
+      </div>
+      </div>
+    </div>
+    <div class="carre Oreiller">
+      <div class="carre-content">
+        <h1>ALL'OREILLER</h1>
+      <div class="carre-desc">
+        <h3>On te chante une berceuse</h3>
+      </div>
+      </div>
+    </div>
+    </div>
+  </body>
+  <footer>
+    <p class="credits">© Nolan Beaujault  (merci Bourdinho pour l'aide) <br></p>
+  </footer>
+</html>
