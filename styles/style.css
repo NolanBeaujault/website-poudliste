@@ -347,9 +347,9 @@
 }
 
 .close-button {
-  position: relative;
-  top: 30%;
-  left: 90%;
+  position: absolute;
+  top: 28%;
+  left: 85%;
   transform: translate(-50%, -50%);
   font-size: 30px;
   color: #fff;
