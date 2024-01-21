@@ -277,6 +277,18 @@
   text-align: center;
 }
 
+.legende_planning{
+  font-family: var(--roboto);
+  color: var(--secondary-color);
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.legende_planning b{
+  color: green;
+}
+
 .tableau__planning th,
 .tableau__planning td {
   border: 1px solid var(--secondary-color);

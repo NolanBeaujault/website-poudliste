@@ -22,26 +22,30 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   background-color: var(--primary-color);
   overflow-x: hidden;
   margin-top: 150px;
 }
 
+
+main {
+  flex: 1; /* Allow the main content to grow and push the footer to the bottom */
+}
+
 footer {
-  position: fixed;
-  bottom: 0;
   background-color: #f27405;
   padding: 10px;
   text-align: center;
   width: 100%;
+  margin-top: auto; /* Push the footer to the bottom */
 }
 
 .credits {
   color: white;
   font-size: 14px;
   margin: 0;
-  bottom: 0;
 }
-
-
