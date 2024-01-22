@@ -253,11 +253,15 @@
 
 .tout h1{
   font-family: 'Harry Potter', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 
 /*CSS de planning.html*/
+.tableau__planning{
+  margin: 10px;
+}
+
 .tableau__planning body {
   font-family: var(--roboto);
   background-color: var(--secondary-color);
