@@ -122,87 +122,37 @@
         });
     </script>
 
-    <!--Partie avec le texte (gauche de la page)-->
-    <div class="hero-container">
-      <div class="hero">
-        <div class="hero-overview">
-          <div class="hero-overview-title-container">
-            <h1 class="hero-overview__title">Poudliste :</h1>
-            <h2 class="hero-overview__title">
-              Nous jurons solennellement que nos intentions sont mauvaises...
-            </h2>
-          </div>
-          <div class="hero-overview__business">
-            <p class="hero-business__description">
-              Suivez la liste des participants au tirage au sort ici, si vous voyez votre nom, buvez une bière pour fêter ça !
-            </p>
-            <button class="hero-business__button">
-              <a
-                class="nav-link"
-                target="_blank"
-                href="jeu.html"
-              >
-                Le jeu !
-                <img src="Assets/arrow-up-right.svg" alt="arrow" />
-              </a>
-            </button>
-          </div>
-        </div>
+    <section class="liste_des_noms">
+        <h2 class="titre_liste_des_noms">Liste de qualifiés</h2>
+        <input type="text" id="searchInput" placeholder="Rechercher un nom">
+        <ul id="name-list">
+        <li>Nolan</li>
+        <li>Adam</li>
+        <li>Paul</li>
+        </ul>
+    </section>
+    <script>
+        
+        document.getElementById("searchInput").addEventListener("input", function () {
+  var filter = this.value.toLowerCase();
+  var names = document.querySelectorAll("#name-list li");
 
-        <!--Bloc orange de la page-->
-        <div class="hero-content">
-          <div class="hero-content__guide">
-            <div class="hero-guide__secure">
-              <img src="Assets/secure.svg" alt="secure" />
-              <p class="hero-guide__secure-desc">
-                <span>Sentez vous en sécurité ⚫</span>
-                Nos meilleurs sorciers sont sur le coup
-              </p>
-            </div>
-            <h3 class="hero-guide__title">
-              Mode d'emploi pour un bon <br />
-              déroulement des soirées de la <br />Poudliste :
-            </h3>
-            <p class="hero-guide__desc">
-              Attention ces soirées ne sont pas sans riques...
-            </p>
-            <ul class="hero-guide__steps">
-              <li>
-                <div class="hero-guide__step-number">1</div>
-                <p class="hero-guide__step-desc">
-                  Chargez votre carte fouaille
-                </p>
-              </li>
-              <li>
-                <div class="hero-guide__step-number align">2</div>
-                <div>
-                  <p class="hero-guide__step-desc">
-                    Combattez les maîtres de la poussière !
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div class="hero-guide__step-number">3</div>
-                <p class="hero-guide__step-desc">
-                  Checkez nos réseaux pour savoir où se passe l'after
-                </p>
-              </li>
-              <li>
-                <div class="hero-guide__step-number">4</div>
-                <p class="hero-guide__step-desc">
-                  Motivez vos potes à venir avec vous
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p><br><br></p>
-    <script src="js/script.js" type="module"></script>
-  </body>
-  <footer>
-    <p class="credits">© Nolan Beaujault  (merci Bourdinho pour l'aide) <br></p>
-  </footer>
+  names.forEach(function (name) {
+    var text = name.textContent.toLowerCase();
+    var displayStyle = text.includes(filter) ? "list-item" : "none";
+    name.style.display = displayStyle;
+  });
+});
 
+// Ajoutez cette partie pour gérer l'appui sur la touche "Entrée"
+document.getElementById("searchInput").addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault(); // Empêche la soumission du formulaire par défaut
+  }
+});
+    </script>
+    </body>
 </html>
+
+
+

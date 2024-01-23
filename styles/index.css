@@ -49,3 +49,39 @@ footer {
   font-size: 14px;
   margin: 0;
 }
+
+.liste_des_noms {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+
+.titre_liste_des_noms {
+  color: var(--secondary-color); 
+  font-size: 35px;
+}
+
+#searchInput {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+#name-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#name-list li {
+  margin-top: 2rem;
+  display: list-item;
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+.filtered {
+  display: none;
+}
